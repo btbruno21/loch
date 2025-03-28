@@ -1,0 +1,271 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+    line-height: 1.6;
+}
+
+header {
+    background-color: #222;
+    color: #fff;
+    padding: 10px 0;
+    text-align: center;
+}
+
+.logo {
+    padding: 2%;
+    width: 40%;
+    background-color: white;
+    border-radius: 100%;
+    margin-left: 30%;
+    margin-right: 30%;
+}
+.logo img{
+    width: 100%;
+}
+
+header nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 1.5vw;
+}
+
+header nav ul li {
+    margin: 0 1.5vw;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+header nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 1.2vw;
+}
+
+header nav ul li a:hover {
+    color: aqua;
+}
+
+.main-content {
+    width: 60vw;
+    margin: 0 auto;
+    text-align: center;
+    padding: 50px 20px;
+}
+
+.main-content h1 {
+    font-size: 2.4vw;
+    margin-bottom: 20px;
+    color: #333;
+}
+.main-content h2 {
+    font-size: 2.2vw;
+    margin-bottom: 20px;
+    color: #333;
+}
+.main-content p {
+    font-size: 1.3vw;
+    margin-bottom: 0.5vw;
+    color: #666;
+}
+.main-content li {
+    font-size: 1.3vw;
+    margin-bottom: 0.5vw;
+    color: #666;
+}
+/* button {
+    background-color: #333;
+    color: white;
+    border: none;
+    padding: 12px 20px;
+    font-size: 1.1em;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    border-radius: 5px;
+}
+
+button:hover {
+    background-color: #ff6347;
+} */
+
+footer {
+    background-color: #222;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+    margin-top: 50px;
+}
+
+footer p {
+    font-size: 1vw;
+}
+
+.whats {
+    width: 4vw;
+    position: fixed;
+    bottom: 1.5vw;
+    left: 2vw;
+}
+.whats li{
+    list-style: none;
+}
+.whats img {
+    border-radius: 50%;
+    width: 100%;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s;
+}
+
+.whats img:hover {
+    transform: scale(1.1);
+}
+
+#servico {
+    margin-top: 2vw;
+    width: 60vw;
+    display: flex;
+    gap: 30px;
+    flex-wrap: wrap;
+    padding: 20px;
+    text-align: justify;
+}
+
+#servico h2 {
+    width: 100%;
+    margin-bottom: 10px;
+    order: 0;
+}
+
+#servico ul {
+    flex: 1;
+    list-style: none;
+}
+
+#servico ul li {
+    list-style: none;
+}
+
+#servico .servico2 {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 15px;
+    flex: 1;
+}
+
+#servico .servico2 img {
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    border: 2px solid black;
+}
+
+#intro{
+    width: 60vw;
+    column-count: 2;
+    column-gap: 20px;
+    text-align: justify;
+}
+
+#intro video{
+    width: 90%;
+    max-width: 100%;
+    height: auto;
+    border-radius: 1vw;
+    border: 2px solid black;
+    vertical-align: middle;
+}
+
+.carousel-container {
+    width: 50vw;
+    margin: 0 auto;
+    overflow: hidden;
+    margin-top: 2vw;
+}
+  
+.carousel {
+    display: flex;
+    transition: transform 1s ease-in-out;
+}
+  
+.carousel-image {
+    width: 100%;
+    height: auto;
+}
+
+#contato{
+    text-align: justify;
+}
+
+#contato li{
+    list-style: none;
+}
+
+#contato img{
+    margin-right: 1vw;
+}
+
+#contato img{
+    width: 4vw;
+    border-radius: 4vw;
+    vertical-align: middle;
+}
+
+@media (max-width: 768px) {
+    header nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .main-content, #servico, #intro {
+        width: 90%;
+    }
+
+    .main-content h1, .main-content h2 {
+        font-size: 6vw;
+    }
+
+    .main-content p, .main-content li {
+        font-size: 4vw;
+    }
+
+    #intro {
+        column-count: 1;
+    }
+
+    #servico {
+        flex-direction: column;
+    }
+
+    #servico .servico2 {
+        grid-template-columns: 1fr;
+    }
+
+    .carousel-container {
+        width: 90%;
+    }
+
+    .whats {
+        width: 50px;
+        bottom: 15px;
+        left: 15px;
+    }
+
+    #contato img {
+        width: 50px;
+    }
+}
