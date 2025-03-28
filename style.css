@@ -87,20 +87,6 @@ header nav ul li a:hover {
     margin-bottom: 0.5vw;
     color: #666;
 }
-/* button {
-    background-color: #333;
-    color: white;
-    border: none;
-    padding: 12px 20px;
-    font-size: 1.1em;
-    cursor: pointer;
-    transition: background-color 0.3s;
-    border-radius: 5px;
-}
-
-button:hover {
-    background-color: #ff6347;
-} */
 
 footer {
     background-color: #222;
@@ -220,16 +206,7 @@ footer p {
     border-radius: 100%;
     vertical-align: middle;
     margin-right: 1vw;
-    margin-top: 2vw;
 }
-/* .menu-btn {
-    display: none;
-    font-size: 24px;
-    background: none;
-    border: none;
-    color: white;
-    cursor: pointer;
-} */
 
 @media (max-width: 768px) {
     header nav ul {
@@ -296,7 +273,12 @@ footer p {
     }
 
     #contato img {
-        width: 50px;
+        width: 13vw;
+        margin-right: 2vw;
+    }
+
+    #contato li{
+        margin-top: 3vw;
     }
 
     footer p{
