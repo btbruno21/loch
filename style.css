@@ -216,23 +216,44 @@ footer p {
 }
 
 #contato img{
-    margin-right: 1vw;
-}
-
-#contato img{
     width: 4vw;
-    border-radius: 4vw;
+    border-radius: 100%;
     vertical-align: middle;
+    margin-right: 1vw;
+    margin-top: 2vw;
 }
+/* .menu-btn {
+    display: none;
+    font-size: 24px;
+    background: none;
+    border: none;
+    color: white;
+    cursor: pointer;
+} */
 
 @media (max-width: 768px) {
     header nav ul {
-        flex-direction: column;
         align-items: center;
     }
 
-    .main-content, #servico, #intro {
-        width: 90%;
+    header nav ul{
+        gap: 4vw;
+    }
+
+    header nav ul li a{
+        font-size: 4vw;
+    }
+
+    .main-content{
+        width: 100%;
+    }
+
+    #servico{
+        width: 100%;
+    }
+
+    #intro{
+        width: 100%;
     }
 
     .main-content h1, .main-content h2 {
@@ -247,10 +268,19 @@ footer p {
         column-count: 1;
     }
 
+    video{
+        margin-left: 5%;
+        width: 80%;
+        margin-bottom: 5vw;
+    }
+
     #servico {
         flex-direction: column;
     }
 
+    #servico li{
+        margin-top: 2vw;
+    }
     #servico .servico2 {
         grid-template-columns: 1fr;
     }
@@ -261,11 +291,15 @@ footer p {
 
     .whats {
         width: 50px;
-        bottom: 15px;
-        left: 15px;
+        bottom: 20px;
+        left: 20px;
     }
 
     #contato img {
         width: 50px;
+    }
+
+    footer p{
+        font-size: 3vw;
     }
 }
