@@ -63,7 +63,6 @@ header nav ul li a:hover {
 .main-content {
     width: 60vw;
     margin: 0 auto;
-    text-align: center;
     padding: 50px 20px;
 }
 
@@ -109,6 +108,7 @@ footer p {
 .whats li{
     list-style: none;
 }
+
 .whats img {
     border-radius: 50%;
     width: 100%;
@@ -156,14 +156,20 @@ footer p {
     width: 100%;
     max-width: 100%;
     height: auto;
-    border-radius: 8px;
+    border-radius: 1vw;
     border: 2px solid black;
 }
 
 #intro{
     width: 60vw;
     column-count: 2;
-    column-gap: 20px;
+}
+
+#intro h2{
+    text-align: left;
+}
+
+#intro p{
     text-align: justify;
 }
 
@@ -174,6 +180,7 @@ footer p {
     border-radius: 1vw;
     border: 2px solid black;
     vertical-align: middle;
+    margin-top: 2vw;
 }
 
 .carousel-container {
@@ -206,6 +213,37 @@ footer p {
     border-radius: 100%;
     vertical-align: middle;
     margin-right: 1vw;
+}
+
+#maquinas h2{
+    text-align: center;
+}
+
+.maquinas-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    max-width: 60vw;
+    margin: auto;
+}
+
+.maquina {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.maquina img {
+    width: 80%;
+    height: auto;
+    border-radius: 8px;
+    border-radius: 1vw;
+    border: 2px solid black;
+}
+
+.maquina p {
+    text-align: center;
+    max-width: 25vw;
 }
 
 @media (max-width: 768px) {
@@ -280,6 +318,20 @@ footer p {
     #contato li{
         margin-top: 3vw;
         font-size: 3.5vw;
+    }
+
+    .maquinas-container {
+        grid-template-columns: 1fr;
+        max-width: 90vw;
+        gap: 4vw;
+    }
+
+    .maquina img {
+        width: 100%;
+    }
+
+    .maquina p {
+        max-width: 80vw;
     }
 
     footer p{
