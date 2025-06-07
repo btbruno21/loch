@@ -54,9 +54,12 @@ header nav ul li a {
     font-weight: bold;
     text-transform: uppercase;
     font-size: 1.2vw;
+    display: inline-block;
+    transition: all 0.4s ease;
 }
 
 header nav ul li a:hover {
+    transform: scale(1.1);
     color: aqua;
 }
 
@@ -113,11 +116,11 @@ footer p {
     border-radius: 50%;
     width: 100%;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
-    transition: transform 0.3s;
+    transition: transform 0.4s;
 }
 
 .whats img:hover {
-    transform: scale(1.1);
+    transform: scale(1.15);
 }
 
 #servico {
@@ -208,6 +211,15 @@ footer p {
     list-style: none;
 }
 
+#contato li a{
+    display: inline-block;
+    transition: all 0.3s ease;
+}
+
+#contato li a:hover{
+    transform: scale(1.1);
+}
+
 #contato img{
     width: 4vw;
     border-radius: 100%;
@@ -255,8 +267,19 @@ footer p {
         gap: 4vw;
     }
 
-    header nav ul li a{
+    header nav ul li a {
         font-size: 4vw;
+        transition: transform 0.2s ease, color 0.2s ease;
+    }
+
+    header nav ul li a:hover {
+        transform: none;
+        color: inherit;
+    }
+
+    header nav ul li a:active {
+        transform: scale(0.95);
+        color: #00ffff; /* Ou mantenha a mesma cor se quiser mais sutil */
     }
 
     .main-content{
