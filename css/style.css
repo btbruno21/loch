@@ -1,0 +1,420 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+    line-height: 1.6;
+}
+
+header {
+    background-color: #222;
+    color: #fff;
+    padding: 10px 0;
+    text-align: center;
+}
+
+h2{
+    margin-top: 2vw;
+}
+
+.logo {
+    padding: 2%;
+    width: 40%;
+    background-color: white;
+    border-radius: 100%;
+    margin-left: 30%;
+    margin-right: 30%;
+}
+.logo img{
+    width: 100%;
+}
+
+header nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 1.5vw;
+}
+
+header nav ul li {
+    margin: 0 1.5vw;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+header nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 1.2vw;
+    display: inline-block;
+    transition: all 0.6s ease;
+}
+
+header nav ul li a:hover {
+    transform: scale(1.08);
+    color: aqua;
+}
+
+.main-content {
+    width: 90%;
+    margin-left: 5%;
+    margin: 0 auto;
+    padding: 50px 20px;
+}
+
+.main-content h1 {
+    font-size: 2.4vw;
+    margin-bottom: 20px;
+    color: #333;
+    text-align: center;
+    margin-top: 2vw;
+}
+.main-content h2 {
+    font-size: 2.2vw;
+    color: #333;
+}
+.main-content p {
+    font-size: 1.3vw;
+    margin-bottom: 0.5vw;
+    color: #666;
+}
+.main-content li {
+    font-size: 1.3vw;
+    margin-bottom: 0.5vw;
+    color: #666;
+}
+
+footer {
+    background-color: #222;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+}
+
+footer p {
+    font-size: 1vw;
+}
+
+.whats {
+    width: 5vw;
+    position: fixed;
+    bottom: 1.5vw;
+    left: 2vw;
+    padding: 0.1vw;
+}
+.whats li{
+    list-style: none;
+}
+
+.whats img {
+    border-radius: 50%;
+    width: 100%;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+    transition: transform 0.4s;
+    background-color: #2CD44B;
+}
+
+.whats img:hover {
+    transform: scale(1.15);
+}
+
+#servico {
+    margin-top: 2vw;
+    width: 90%;
+    margin-left: 5%;
+    display: flex;
+    gap: 2vw;
+    flex-wrap: wrap;
+    padding: 20px;
+    text-align: justify;
+}
+
+#servico h2 {
+    width: 100%;
+    margin-bottom: 1vw;
+    margin-top: 0;
+}
+
+#servico ul {
+    flex: 1;
+    list-style: none;
+}
+
+#servico ul li {
+    list-style: none;
+}
+
+#servico .servico2 {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 0.5vw;
+    flex: 1;
+    align-items: center;
+}
+
+#servico .servico2 img {
+    width: 100%;
+    height: auto;
+    border-radius: 1vw;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.4);
+}
+
+#intro {
+    width: 80%;
+    margin: 2vw auto;
+    display: flex;
+    gap: 2vw;
+    align-items: center; /* centraliza verticalmente o vídeo com o texto */
+}
+
+#intro div {
+    flex: 1;
+}
+
+#intro video {
+    width: 100%;
+    height: auto;
+    border-radius: 1vw; /* opcional, para ficar mais bonito */
+    box-shadow: 0 4px 6px rgba(0,0,0,0.3); /* opcional */
+}
+
+#intro h1{
+    text-align: center;
+}
+
+#intro p{
+    text-align: justify;
+}
+
+.carousel-container {
+  width: 60%;
+  margin: 0 auto;
+  overflow: hidden;
+  margin-top: 2vw;
+  position: relative;
+  box-shadow: 0 8px 12px rgba(0, 0, 0, 0.5);
+}
+
+.carousel {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  transition: transform 1s ease-in-out;
+}
+
+.carousel-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  flex: 0 0 100%;
+}
+
+#contato{
+    text-align: justify;
+    width: 70%;
+    margin-left: 15%;
+}
+
+#contato li{
+    list-style: none;
+}
+
+#contato li a{
+    display: inline-block;
+    transition: all 0.5s ease;
+    font-size: 1vw;
+}
+
+#contato li a:hover{
+    transform: scale(1.06);
+}
+
+#contato img{
+    width: 4vw;
+    border-radius: 20%;
+    vertical-align: middle;
+    margin-right: 1vw;
+}
+
+.email img{
+    padding: 0.2vw;
+    border-radius: 0 !important;
+    background-color: transparent;
+}
+
+#maquinas h2{
+    text-align: center;
+    margin-bottom: 1vw;
+}
+
+#maquinas p{
+    margin-top: 1vw;
+    font-weight: bold;
+}
+
+.maquinas-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2vw;
+    max-width: 60vw;
+    margin: auto;
+}
+
+.maquina {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.maquina img {
+    width: 100%;
+    height: 20vw;
+    border-radius: 1vw;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+}
+
+.maquina p {
+    text-align: center;
+    max-width: 25vw;
+}
+
+@media (max-width: 768px) {
+    header nav ul {
+        align-items: center;
+    }
+
+    header nav ul{
+        gap: 4vw;
+    }
+
+    header nav ul li a {
+        font-size: 4vw;
+        transition: transform 0.2s ease, color 0.2s ease;
+    }
+
+    header nav ul li a:hover {
+        transform: none;
+        color: inherit;
+    }
+
+    header nav ul li a:active {
+        transform: scale(0.95);
+        color: #00ffff; /* Ou mantenha a mesma cor se quiser mais sutil */
+    }
+
+    .logo{
+        width: 80%;
+        margin-left: 10%;
+        margin-bottom: 2vw;
+    }
+
+    .logo img{
+        padding: 2%;
+    }
+
+    .main-content{
+        width: 100%;
+    }
+
+    #servico{
+        width: 100%;
+        margin: 0;
+        flex-direction: column;
+        padding: 0;
+    }
+
+    #servico img{
+        margin-bottom: 2vw;
+    }
+    
+    #servico li{
+        margin-top: 2vw;
+    }
+
+    #servico ul{
+        padding: 2vw;
+    }
+
+    #servico .servico2 {
+        grid-template-columns: 1fr;
+    }
+
+    #intro{
+        width: 100%;
+        column-count: 1;
+        display: block;
+    }
+
+    #maquinas {
+        margin-top: 5vw;
+    }
+
+    .main-content h1, .main-content h2 {
+        font-size: 6vw;
+    }
+
+    .main-content p, .main-content li {
+        font-size: 4vw;
+    }
+
+    video{
+        width: 80%;
+        margin-bottom: 5vw;
+    }
+
+    .carousel-container {
+        width: 90%;
+    }
+
+    .whats {
+        width: 15%;
+        bottom: 30px;
+        left: 20px;
+    }
+
+    #contato{
+        width: 90%;
+        margin-left: 5%;
+    }
+
+    #contato img {
+        width: 13vw;
+        margin-right: 2vw;
+    }
+
+    #contato li{
+        margin-top: 3vw;
+        font-size: 3.5vw;
+    }
+
+    .maquinas-container {
+        grid-template-columns: 1fr;
+        max-width: 100%;
+        gap: 4vw;
+    }
+
+    .maquina img {
+        width: 100%;
+        height: auto;
+    }
+
+    .maquina p {
+        max-width: 80vw;
+    }
+
+    footer p{
+        font-size: 3vw;
+    }
+}
