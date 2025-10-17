@@ -28,7 +28,7 @@ Para garantir a segurança da comunicação e a integridade dos dados, o site ut
 
 Você pode visualizar o site online através do seguinte link:
 
-[Link do Site Aqui] <!-- Inserir o link do site após a publicação -->
+https://lochterraplanagem.com.br
 
 Para visualizar o projeto localmente, basta abrir o arquivo `index.html` em seu navegador.
 
@@ -55,15 +55,3 @@ loch_project/
 *   `css/style.css`: Contém todos os estilos CSS para o layout e design do site.
 *   `js/script.js`: Contém o código JavaScript para funcionalidades interativas.
 *   `img/`: Diretório que armazena todas as imagens e vídeos utilizados no site.
-
-## Contato
-
-Para mais informações sobre a empresa Loch Transportes e Terraplanagem, você pode entrar em contato através dos seguintes canais:
-
-*   **Telefone**: (41) 99122-3002
-*   **WhatsApp (Henrique)**: (41) 99122-3002
-*   **WhatsApp (Pedro)**: (41) 99606-4388
-*   **Instagram**: [@loch_terraplanagem](https://www.instagram.com/loch_terraplanagem/)
-*   **Email**: loch_terraplanagem@hotmail.com
-
----
